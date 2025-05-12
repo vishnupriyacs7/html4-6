@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>background-attachment demo</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #eee;
+      padding: 50px;
+    }
+
+    .box {
+      width: 300px;
+      height: 200px;
+      margin-bottom: 50px;
+      border: 2px solid #333;
+      overflow: auto;
+      background-image: url("C:/Users/HP/OneDrive/Pictures/2.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: white;
+      padding: 10px;
+    }
+
+    .scroll-bg {
+      background-attachment: scroll;
+    }
+
+    .local-bg {
+      background-attachment: local;
+    }
+     .fixed-bg {
+      background-attachment: fixed;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h2>Background-Attachment: Scroll (Default)</h2>
+  <div class="box scroll-bg">
+    <p>This is a scrollable box with <strong>background-attachment: scroll</strong>.</p>
+    <p>Scroll this box down. The background will NOT move. It stays fixed relative to the whole page.</p>
+    <p>Keep scrolling...</p>
+    <p>More content...</p>
+    <p>Even more...</p>
+    <p>Almost there...</p>
+  </div>
+
+  <h2>Background-Attachment: Local</h2>
+  <div class="box local-bg">
+    <p>This is a scrollable box with <strong>background-attachment: local</strong>.</p>
+    <p>Scroll this box down. The background WILL move with the content inside.</p>
+    <p>Keep scrolling...</p>
+    <p>More content...</p>
+    <p>Even more...</p>
+    <p>Almost there...</p>
+  </div>
+
+ <h2>Background-Attachment: Fixed</h2>
+  <div class="box fixed-bg">
+    <p>This is a scrollable box with <strong>background-attachment: local</strong>.</p>
+    <p>Scroll this box down. The background WILL not move with the content inside.</p>
+    <p>Keep scrolling...</p>
+    <p>More content...</p>
+    <p>Even more...</p>
+    <p>Almost there...</p>
+  </div>
+
+</body>
+</html>
